@@ -33,7 +33,9 @@ const NavBar = () => {
                                       <NavLink to="/categoria/3" className="nav-link">
                                             Seguridad Ind
                                         </NavLink>
-                                 </li>                      
+                                 </li>   
+                                  
+                                                
                       </ul>
            </div>
                       <CartWidget />
