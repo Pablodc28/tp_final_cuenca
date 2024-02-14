@@ -2,17 +2,15 @@
 import { CarritoContext } from "../../context/CarritoContext";
 import { useContext } from "react";
 import Swal from "sweetalert2";
-
+import "./CarItemStyle.css"  
 
 const CartItem = ({item, cantidad}) => {
   const { eliminarProducto } = useContext(CarritoContext);
-
-    // console.log(item.id)
-    // console.log(typeof(item.id))
+    
 
   return (
 
-    <div className="card w-25 m-3 my-2" >
+    <div className="card cardItem m-2 my-2" >
       <div className="card-body">
       <img src={item.img}  className="card-img-top img-fluid rounded mx-auto w-75" alt={item.nombre} />
         <h3 className="card-title"> {item.nombre}  </h3>
