@@ -127,7 +127,7 @@ const Checkout = () => {
         <tbody>
           {carrito.map((prod) => (   
             <tr key={prod.item.id}>            
-              <td> <img src={prod.item.img}  className=" object-fit-cover  rounded-circle mx-auto w-50" alt={prod.item.nombre} /> </td>
+              <td> <img src={prod.item.img}  className=" object-fit-cover  rounded-circle mx-auto " alt={prod.item.nombre} /> </td>
               <td>  {prod.item.nombre} </td>
               <td className="fw-bold text-end"> $ {prod.item.precio} </td>     
               <td className="text-end">  {prod.cantidad} </td>
