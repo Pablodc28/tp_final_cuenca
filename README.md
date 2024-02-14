@@ -18,10 +18,9 @@ React y Vite para el frontend. Firebase como base de datos relacional.
            
 
 ## Instalacion
-1. Clonar repositorio: `git clone https://github.com/Pablodc28/EntregaFinal_Cuenca`
-2. Ingresar a la carpeta del proyecto: `cd tienda_mariolo`
+Clonar repositorio: `git clone https://github.com/Pablodc28/tp_final_cuenca.git`
+2. Ingresar a la carpeta del proyecto: con `cd `
 3. Ejecutar comando de instalación: `npm install` o `yarn install`.
-4. Crear un archivo `.env.local` en la raíz del proyecto y agregar las siguientes variables de entorno:
 
 
 
