@@ -5,6 +5,7 @@ import { db } from "../../services/config";
 import { collection, addDoc, updateDoc, getDoc, doc } from "firebase/firestore";
 import Swal from "sweetalert2";
 import "./CheckoutStyle.css";
+import { Link  } from "react-router-dom"
 
 
 const Checkout = () => {
@@ -127,7 +128,7 @@ const Checkout = () => {
         <tbody>
           {carrito.map((prod) => (   
             <tr key={prod.item.id}>            
-              <td> <img src={prod.item.img}  className=" object-fit-cover  rounded-circle mx-auto " alt={prod.item.nombre} /> </td>
+              <td> <Link to={`/item/${prod.item.id}`} > <img src={prod.item.img}  className=" object-fit-cover  rounded-circle mx-auto " alt={prod.item.nombre} /> </Link> </td> 
               <td>  {prod.item.nombre} </td>
               <td className="fw-bold text-end"> $ {prod.item.precio} </td>     
               <td className="text-end">  {prod.cantidad} </td>

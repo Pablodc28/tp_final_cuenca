@@ -3,6 +3,7 @@ import { CarritoContext } from "../../context/CarritoContext";
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import "./CarItemStyle.css"  
+import { Link  } from "react-router-dom"
 
 const CartItem = ({item, cantidad}) => {
   const { eliminarProducto } = useContext(CarritoContext);
@@ -12,7 +13,7 @@ const CartItem = ({item, cantidad}) => {
 
     <div className="card cardItem m-2 my-2" >
       <div className="card-body">
-      <img src={item.img}  className="card-img-top img-fluid rounded mx-auto w-75" alt={item.nombre} />
+      <Link to={`/item/${item.id}`} >  <img src={item.img}  className="card-img-top img-fluid rounded mx-auto w-75" alt={item.nombre} /> </Link>
         <h3 className="card-title"> {item.nombre}  </h3>
         <p className="card-text"> Cantidad: {cantidad} </p>
         <p className="fw-bold"> Precio: {item.precio} </p>                
