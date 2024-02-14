@@ -14,7 +14,7 @@ const App = () => {
       <BrowserRouter>
       <CarritoProvider>
         <NavBar />      
-          <p className='fs-2 m-4 mt-5 p-4'>Hola Bienvenido, gracias por visitar la Tienda El Ramblón</p>
+          <p className='fs-2 m-4 mt-5 p-4'>Hola Bienvenido, gracias por visitar vuestra Tienda </p>
         <Routes>
           <Route path="/" element={<ItemListContainer  />} />
           <Route path="/categoria/:idCategoria" element={<ItemListContainer/>} />

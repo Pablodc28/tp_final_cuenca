@@ -8,7 +8,7 @@ const NavBar = () => {
            <div className="container-fluid">
            
                       <Link to="/" className="navbar-brand">
-                          Tienda El Ramblón
+                          El Ramblón
                       </Link>
 
                       <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
