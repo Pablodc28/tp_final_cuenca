@@ -34,6 +34,11 @@ const NavBar = () => {
                                             Seguridad Ind
                                         </NavLink>
                                  </li>   
+                                 <li className="nav-item">
+                                      <NavLink to="/ordenes" className="nav-link">
+                                           <i className="bi bi-search"></i>Buscar..
+                                        </NavLink>
+                                 </li>   
                                   
                                                 
                       </ul>
